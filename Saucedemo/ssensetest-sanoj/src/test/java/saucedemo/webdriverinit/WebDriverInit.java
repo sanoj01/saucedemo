@@ -13,7 +13,7 @@ public class WebDriverInit {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\SunilReddy\\Saucedemo\\ssensetest-sanoj\\src\\test\\java\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", ".\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com");
         driver.manage().window().maximize();
